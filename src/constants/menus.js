@@ -1,327 +1,108 @@
-import AiAgentsGradientIcon from 'icons/header/ai-agent-gradient.inline.svg';
-import AiAgentsIcon from 'icons/header/ai-agent.inline.svg';
-import AiGradientIcon from 'icons/header/ai-gradient.inline.svg';
-import AiIcon from 'icons/header/ai.inline.svg';
-import ApiGradientIcon from 'icons/header/api-gradient.inline.svg';
-import ApiIcon from 'icons/header/api.inline.svg';
-import AuthGradientIcon from 'icons/header/auth-gradient.inline.svg';
-import AuthIcon from 'icons/header/auth.inline.svg';
-import AutoscalingGradientIcon from 'icons/header/autoscaling-gradient.inline.svg';
-import AutoscalingIcon from 'icons/header/autoscaling.inline.svg';
-import BlogIcon from 'icons/header/blog.inline.svg';
-import BranchingGradientIcon from 'icons/header/branching-gradient.inline.svg';
-import BranchingIcon from 'icons/header/branching.inline.svg';
-import BuildingGradientIcon from 'icons/header/building-gradient.inline.svg';
-import BuildingIcon from 'icons/header/building.inline.svg';
-import CareerIcon from 'icons/header/career.inline.svg';
-import ChatIcon from 'icons/header/chat.inline.svg';
-import CloudGradientIcon from 'icons/header/cloud-gradient.inline.svg';
-import CloudIcon from 'icons/header/cloud.inline.svg';
-import ConnectionGradientIcon from 'icons/header/connection-gradient.inline.svg';
-import ConnectionIcon from 'icons/header/connection.inline.svg';
-import DatabaseGradientIcon from 'icons/header/database-gradient.inline.svg';
-import DatabaseIcon from 'icons/header/database.inline.svg';
-import FolderGradientIcon from 'icons/header/folder-gradient.inline.svg';
-import FolderIcon from 'icons/header/folder.inline.svg';
-import GearGradientIcon from 'icons/header/gear-gradient.inline.svg';
-import GearIcon from 'icons/header/gear.inline.svg';
-import MigrationGradientIcon from 'icons/header/migration-gradient.inline.svg';
-import MigrationIcon from 'icons/header/migration.inline.svg';
-import MultiTbgGradientIcon from 'icons/header/multi-tb-gradient.inline.svg';
-import MultiTbgIcon from 'icons/header/multi-tb.inline.svg';
-import PatternGradientIcon from 'icons/header/pattern-gradient.inline.svg';
-import PatternIcon from 'icons/header/pattern.inline.svg';
-import PeopleIcon from 'icons/header/people.inline.svg';
-import RestoreGradientIcon from 'icons/header/restore-gradient.inline.svg';
-import RestoreIcon from 'icons/header/restore.inline.svg';
-import RocketGradientIcon from 'icons/header/rocket-gradient.inline.svg';
-import RocketIcon from 'icons/header/rocket.inline.svg';
-import SearchGradientIcon from 'icons/header/search-gradient.inline.svg';
-import SearchIcon from 'icons/header/search.inline.svg';
-import SecurityGradientIcon from 'icons/header/security-gradient.inline.svg';
-import SecurityIcon from 'icons/header/security.inline.svg';
-import ServerlessGradientIcon from 'icons/header/serverless-gradient.inline.svg';
-import ServerlessIcon from 'icons/header/serverless.inline.svg';
-
 import LINKS from './links';
 
-export default {
+const MENUS = {
   header: [
     {
-      text: 'Product',
+      text: 'Services',
+      to: '#services',
       sections: [
         {
-          title: 'Database',
+          name: 'Web Development',
+          description: 'Custom websites and web applications',
           items: [
             {
-              icon: AutoscalingIcon,
-              iconGradient: AutoscalingGradientIcon,
-              title: 'Autoscaling',
-              description: 'Automatic instance sizing',
-              to: LINKS.autoscaling,
+              icon: 'web',
+              title: 'Frontend Development',
+              description: 'React, Vue, Angular applications',
+              to: '#frontend',
             },
             {
-              icon: ConnectionIcon,
-              iconGradient: ConnectionGradientIcon,
-              title: 'Connection pooler',
-              description: 'Thousands of connections',
-              to: LINKS.connectionPooling,
+              icon: 'backend',
+              title: 'Backend Development',
+              description: 'Node.js, Python, PHP solutions',
+              to: '#backend',
             },
             {
-              icon: CloudIcon,
-              iconGradient: CloudGradientIcon,
-              title: 'Bottomless storage',
-              description: 'With copy-on-write',
-              to: LINKS.storage,
-            },
-            {
-              icon: BranchingIcon,
-              iconGradient: BranchingGradientIcon,
-              title: 'Branching',
-              description: 'Modern Postgres workflows',
-              to: LINKS.flow,
-            },
-            {
-              icon: RestoreIcon,
-              iconGradient: RestoreGradientIcon,
-              title: 'Instant restores',
-              description: 'Recover TBs in seconds',
-              to: LINKS.branchRestore,
+              icon: 'fullstack',
+              title: 'Full-Stack Solutions',
+              description: 'Complete web applications',
+              to: '#fullstack',
             },
           ],
         },
         {
-          title: 'Ecosystem',
+          name: 'Mobile Development',
+          description: 'iOS and Android applications',
           items: [
             {
-              icon: AuthIcon,
-              iconGradient: AuthGradientIcon,
-              title: 'Auth',
-              description: 'Authenticate your users',
-              to: LINKS.auth,
+              icon: 'mobile',
+              title: 'Native Apps',
+              description: 'iOS and Android development',
+              to: '#native-apps',
             },
             {
-              icon: SearchIcon,
-              iconGradient: SearchGradientIcon,
-              title: 'Search',
-              description: 'Faster with pg_search',
-              to: LINKS.pgSearch,
-            },
-            {
-              icon: ApiIcon,
-              iconGradient: ApiGradientIcon,
-              title: 'API',
-              description: 'Manage Neon at scale',
-              to: LINKS.api,
-            },
-            {
-              icon: AiIcon,
-              iconGradient: AiGradientIcon,
-              title: 'AI',
-              description: 'Embeddings & agents',
-              to: LINKS.ai,
-            },
-            {
-              icon: MigrationIcon,
-              iconGradient: MigrationGradientIcon,
-              title: 'Migrations',
-              description: 'Minimize downtime',
-              to: LINKS.migration,
-            },
-          ],
-        },
-        {
-          banner: {
-            title: 'What is Neon?',
-            description: 'Serverless Postgres',
-            to: LINKS.whyNeon,
-          },
-        },
-      ],
-    },
-    {
-      text: 'Solutions',
-      sections: [
-        {
-          title: 'Use cases',
-          items: [
-            {
-              icon: ServerlessIcon,
-              iconGradient: ServerlessGradientIcon,
-              title: 'Serverless Apps',
-              description: 'Autoscale with traffic',
-              to: `${LINKS.useCases}/serverless-apps`,
-            },
-            {
-              icon: MultiTbgIcon,
-              iconGradient: MultiTbgGradientIcon,
-              title: 'Multi-TB',
-              description: 'Scale & restore instantly',
-              to: `${LINKS.useCases}/multi-tb`,
-            },
-            {
-              icon: DatabaseIcon,
-              iconGradient: DatabaseGradientIcon,
-              title: 'Database per Tenant',
-              description: 'Data isolation without overhead',
-              to: `${LINKS.useCases}/database-per-tenant`,
-            },
-            {
-              icon: PatternIcon,
-              iconGradient: PatternGradientIcon,
-              title: 'Platforms',
-              description: 'Offer Postgres to your users',
-              to: LINKS.platforms,
-            },
-            {
-              icon: GearIcon,
-              iconGradient: GearGradientIcon,
-              title: 'Dev/Test',
-              description: 'Production-like environments',
-              to: `${LINKS.useCases}/dev-test`,
-            },
-            {
-              icon: AiAgentsIcon,
-              iconGradient: AiAgentsGradientIcon,
-              title: 'Agents',
-              description: 'Deploy Postgres via AI agents',
-              to: `${LINKS.useCases}/ai-agents`,
-            },
-          ],
-        },
-        {
-          title: 'For teams',
-          items: [
-            {
-              icon: BuildingIcon,
-              iconGradient: BuildingGradientIcon,
-              title: 'Enterprise',
-              description: 'Scale & grow',
-              to: LINKS.enterprise,
-            },
-            {
-              icon: RocketIcon,
-              iconGradient: RocketGradientIcon,
-              title: 'Startups',
-              description: 'Build with Neon',
-              to: LINKS.startups,
-            },
-            {
-              icon: SecurityIcon,
-              iconGradient: SecurityGradientIcon,
-              title: 'Security',
-              description: 'Compliance & privacy',
-              to: LINKS.security,
-            },
-            {
-              icon: FolderIcon,
-              iconGradient: FolderGradientIcon,
-              title: 'Case studies',
-              description: 'Explore customer stories',
-              to: LINKS.caseStudies,
+              icon: 'hybrid',
+              title: 'Cross-Platform',
+              description: 'React Native, Flutter apps',
+              to: '#cross-platform',
             },
           ],
         },
       ],
     },
     {
-      text: 'Docs',
-      to: LINKS.docs,
+      text: 'Portfolio',
+      to: '#portfolio',
     },
     {
-      text: 'Pricing',
-      to: LINKS.pricing,
+      text: 'About',
+      to: '#about',
     },
     {
-      text: 'Company',
-      sections: [
-        {
-          items: [
-            {
-              icon: BlogIcon,
-              title: 'Blog',
-              to: LINKS.blog,
-            },
-            {
-              icon: PeopleIcon,
-              title: 'About us',
-              to: LINKS.aboutUs,
-            },
-            {
-              icon: CareerIcon,
-              title: 'Careers',
-              to: LINKS.careers,
-            },
-            {
-              icon: ChatIcon,
-              title: 'Contact',
-              to: LINKS.contactSales,
-            },
-          ],
-        },
-      ],
+      text: 'Contact',
+      to: '#contact',
     },
   ],
   footer: [
     {
+      heading: 'Services',
+      items: [
+        {
+          text: 'Web Development',
+          to: '#web-development',
+        },
+        {
+          text: 'Mobile Apps',
+          to: '#mobile-apps',
+        },
+        {
+          text: 'Cloud Solutions',
+          to: '#cloud-solutions',
+        },
+        {
+          text: 'IT Consulting',
+          to: '#consulting',
+        },
+      ],
+    },
+    {
       heading: 'Company',
       items: [
         {
-          text: 'About',
-          to: LINKS.aboutUs,
+          text: 'About Us',
+          to: '#about',
         },
         {
-          text: 'Blog',
-          to: LINKS.blog,
+          text: 'Our Team',
+          to: '#team',
         },
         {
           text: 'Careers',
-          to: LINKS.careers,
+          to: '#careers',
         },
         {
-          text: 'Contact Sales',
-          to: LINKS.contactSales,
-        },
-        {
-          text: 'Partners',
-          to: LINKS.partners,
-        },
-        {
-          text: 'Security',
-          to: LINKS.security,
-        },
-        {
-          text: 'Legal',
-          links: [
-            {
-              text: 'Privacy Policy',
-              to: LINKS.privacy,
-            },
-            {
-              text: 'Terms of Service',
-              to: LINKS.terms,
-            },
-            {
-              text: 'DPA',
-              to: LINKS.dpa,
-            },
-            {
-              text: 'Subprocessors List',
-              to: LINKS.subprocessors,
-            },
-            {
-              text: 'Privacy Guide',
-              to: LINKS.privacyGuide,
-            },
-            {
-              text: 'Cookie Policy',
-              to: LINKS.cookiePolicy,
-            },
-            {
-              text: 'Business Information',
-              to: LINKS.businessInformation,
-            },
-          ],
+          text: 'Contact',
+          to: '#contact',
         },
       ],
     },
@@ -329,123 +110,45 @@ export default {
       heading: 'Resources',
       items: [
         {
-          text: 'Docs',
-          to: LINKS.docs,
+          text: 'Portfolio',
+          to: '#portfolio',
         },
         {
-          text: 'Changelog',
-          to: LINKS.changelog,
+          text: 'Case Studies',
+          to: '#case-studies',
         },
         {
-          text: 'Support',
-          to: LINKS.support,
+          text: 'Blog',
+          to: '#blog',
         },
         {
-          text: 'Community Guides',
-          to: LINKS.guides,
-        },
-        {
-          text: 'PostgreSQL Tutorial',
-          to: LINKS.postgresqltutorial,
-        },
-        {
-          text: 'Startups',
-          to: LINKS.startups,
-        },
-        {
-          text: 'Creators',
-          to: LINKS.creators,
+          text: 'Documentation',
+          to: '#docs',
         },
       ],
     },
     {
-      heading: 'Social',
+      heading: 'Support',
       items: [
         {
-          text: 'Discord',
-          to: LINKS.discord,
-          icon: 'discord-icon',
+          text: 'Help Center',
+          to: '#help',
         },
         {
-          text: 'GitHub',
-          to: LINKS.github,
-          icon: 'github-icon',
+          text: 'Contact Support',
+          to: '#support',
         },
         {
-          text: 'x.com',
-          to: LINKS.twitter,
-          icon: 'x-icon',
+          text: 'Community',
+          to: '#community',
         },
         {
-          text: 'LinkedIn',
-          to: LINKS.linkedin,
-          icon: 'linkedin-icon',
-        },
-        {
-          text: 'YouTube',
-          to: LINKS.youtube,
-          icon: 'youtube-icon',
-        },
-      ],
-    },
-    {
-      heading: 'Compliance',
-      items: [
-        {
-          text: 'CCPA',
-          description: 'Compliant',
-          icon: 'check-icon',
-          to: LINKS.certCCPA,
-        },
-        {
-          text: 'GDPR',
-          description: 'Compliant',
-          icon: 'check-icon',
-          to: LINKS.certGDPR,
-        },
-        {
-          text: 'ISO 27001',
-          description: 'Certified',
-          icon: 'check-icon',
-          to: LINKS.certISO27001,
-        },
-        {
-          text: 'ISO 27701',
-          description: 'Certified',
-          icon: 'check-icon',
-          to: LINKS.certISO27701,
-        },
-        {
-          text: 'SOC 2',
-          description: 'Certified',
-          icon: 'check-icon',
-          to: LINKS.certSOC2,
-        },
-        {
-          text: 'HIPAA',
-          description: 'Compliant',
-          icon: 'check-icon',
-          to: LINKS.certHIPAA,
-          links: [
-            {
-              text: 'Compliance Guide',
-              to: LINKS.hipaaCompliance,
-            },
-            {
-              text: 'Neon’s Sub Contractors',
-              to: LINKS.hipaaContractors,
-            },
-            {
-              text: 'Sensitive Data Terms',
-              to: LINKS.sensitiveDataTerms,
-            },
-          ],
-        },
-        {
-          text: 'Trust Center',
-          to: LINKS.trust,
+          text: 'Status',
+          to: '#status',
         },
       ],
     },
   ],
 };
+
+export default MENUS;

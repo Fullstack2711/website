@@ -4,9 +4,9 @@ export const DEFAULT_IMAGE_PATH = '/images/social-previews/index.jpg';
 
 export default {
   index: {
-    title: 'Neon Serverless Postgres — Ship faster',
+    title: 'Dewibe IT Solutions — Professional Technology Services',
     description:
-      'The database you love, on a serverless platform designed to help you build reliable and scalable applications faster.',
+      'Expert IT services and innovative technology solutions designed to help your business grow and succeed in the digital world.',
     pathname: '',
   },
   ai: {

@@ -13,10 +13,10 @@ const InstantProvisioning = () => (
       <ActiveTabContext>
         <div className="w-[384px] xl:w-[352px] lg:w-[256px] md:w-full md:max-w-[580px]">
           <h2 className="font-title text-[68px] font-medium leading-[0.9] tracking-extra-tight text-white xl:text-[56px] lg:text-[44px] sm:text-[32px]">
-            Instant Provisioning
+            Rapid Deployment
           </h2>
           <p className="mt-[18px] text-xl font-light tracking-extra-tight text-gray-new-70 xl:mt-4 xl:text-lg lg:mt-3 lg:text-base md:mt-2">
-            No waiting. No config.
+            Fast setup. Professional results.
           </p>
         </div>
         <div className="relative flex w-[652px] flex-col pb-[171px] pt-[100px] xl:w-[580px] xl:pb-[148px] xl:pt-[84px] lg:w-[417px] lg:pb-[105px] lg:pt-[61px] md:-mt-4 md:w-full md:max-w-[580px] md:pb-36 md:pt-0 sm:-mt-8 sm:overflow-hidden sm:pt-4">

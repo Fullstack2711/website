@@ -1,6 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState, useRef, createRef, useEffect, useCallback } from 'react';
 import useWindowSize from 'react-use/lib/useWindowSize';
@@ -31,29 +32,29 @@ const ITEMS = [
   {
     video: {
       icon: scalingIcon,
-      title: 'Scaling',
+      title: 'Web Development',
       mp4: '/videos/pages/home/hero/scaling.mp4?updated=20240514120633',
       m3u8: '/videos/pages/home/hero/scaling.m3u8?updated=20240514120633',
       bgImage: '/videos/pages/home/hero/scaling.jpg',
     },
-    title: 'Scaling',
+    title: 'Web Development',
     description:
-      'Focus on building applications with time and money-saving features like instant provisioning, autoscaling according to load, and scale to zero.',
-    linkLabel: 'Discover Autoscaling',
+      'Custom web applications and responsive websites built with modern technologies. From e-commerce to enterprise solutions, we deliver scalable and secure web platforms.',
+    linkLabel: 'Explore Web Services',
     linkUrl: LINKS.autoscaling,
   },
   {
     video: {
       icon: branchingIcon,
-      title: 'Branching',
+      title: 'IT Consulting',
       mp4: '/videos/pages/home/hero/branching.mp4?updated=20240508184252',
       m3u8: '/videos/pages/home/hero/branching.m3u8?updated=20240508184252',
       bgImage: '/videos/pages/home/hero/branching.jpg',
     },
-    title: 'Branching',
+    title: 'IT Consulting',
     description:
-      'Instantly branch your data and schema to access isolated DB copies for development, CI/CD, and schema migrations with copy-on-write storage.',
-    linkLabel: 'Explore Branching',
+      'Strategic IT consulting and digital transformation services. We help businesses optimize their technology infrastructure and implement innovative solutions.',
+    linkLabel: 'Learn About Consulting',
     linkUrl: LINKS.docsBranching,
   },
 ];
@@ -107,14 +108,29 @@ const Hero = () => {
     <section className="hero safe-paddings relative pt-[168px] xl:pt-[152px] lg:pt-32 md:pt-[88px]">
       <Container className="relative z-10 xl:px-8" size="1100">
         <div className="flex flex-col items-center text-center">
-          <h1 className="font-title text-[72px] font-medium leading-none -tracking-[0.03em] text-white xl:text-[64px] lg:text-[56px] sm:text-[32px]">
-            Ship faster with Postgres
-          </h1>
-          <p className="mt-2.5 max-w-xl text-lg font-light leading-snug tracking-tighter text-gray-new-80 lg:mt-2.5 lg:text-base">
-            The database developers trust, on a serverless platform designed to help you build
-            reliable and scalable applications faster.
-          </p>
-          <div className="mt-8 flex items-center gap-6">
+          <motion.h1
+            className="font-title text-[72px] font-medium leading-none -tracking-[0.03em] text-white xl:text-[64px] lg:text-[56px] sm:text-[32px]"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Dewibe IT Solutions
+          </motion.h1>
+          <motion.p
+            className="mt-2.5 max-w-xl text-lg font-light leading-snug tracking-tighter text-gray-new-80 lg:mt-2.5 lg:text-base"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            Professional IT services and innovative technology solutions designed to help your
+            business grow and succeed in the digital world.
+          </motion.p>
+          <motion.div
+            className="mt-8 flex items-center gap-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
             <Button
               className="!px-8 font-semibold md:!px-7"
               theme="primary"
@@ -124,7 +140,7 @@ const Hero = () => {
               tagName="Hero"
               analyticsEvent="home_hero_start_for_free_clicked"
             >
-              Start for Free
+              Get Started
             </Button>
             <Button
               className="text-[15px] font-medium"
@@ -134,9 +150,9 @@ const Hero = () => {
               analyticsEvent="home_hero_talk_to_us_clicked"
               withArrow
             >
-              Talk to Us
+              Contact Us
             </Button>
-          </div>
+          </motion.div>
         </div>
 
         <div className="mt-[74px] flex gap-x-2.5 xl:mt-16 lg:mt-14 sm:mt-9 sm:flex-col sm:gap-y-9">

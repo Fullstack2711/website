@@ -102,8 +102,8 @@ const Hero = () => (
               />
             </Heading>
             <p className="mt-4 text-balance text-xl leading-snug tracking-tight text-gray-new-80 xl:text-lg xl:leading-normal lg:mt-3 md:text-base">
-              We&apos;re happy to assist you with any questions about our technology, pricing plans,
-              custom contract options, and&nbsp;migrations assistance.
+              We&apos;re happy to assist you with any questions about our services, project pricing,
+              custom solutions, and&nbsp;consultation needs.
             </p>
             <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-3.5 xl:gap-x-[52px] lg:mt-[18px] lg:flex-row lg:justify-center lg:gap-8 lg:gap-x-5 md:flex-wrap md:gap-x-4 md:gap-y-2.5 sm:gap-x-4 sm:gap-y-2.5">
               {CERTIFICATES.map(({ title, description, icon }) => (

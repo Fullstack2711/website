@@ -21,7 +21,7 @@ const Trusted = () => (
           'xl:-mb-[46px] xl:text-[112px] lg:mb-8 lg:bg-none lg:text-[72px] lg:text-white sm:mb-7 sm:text-[40px] sm:leading-[0.95em] sm:tracking-tighter'
         )}
       >
-        Trusted Postgres
+        Trusted Solutions
       </h2>
       <div
         className={clsx(
@@ -37,7 +37,7 @@ const Trusted = () => (
           to={LINKS.github}
         >
           <span className="mx-auto flex items-center font-medium text-white transition-colors duration-200 group-hover:text-green-45">
-            neondatabase/neon
+            dewibe/projects
             <ArrowRightIcon className="-mb-px ml-1.5 shrink-0 transition-transform duration-200 group-hover:translate-x-[3px]" />
           </span>
         </Card>
@@ -47,7 +47,7 @@ const Trusted = () => (
           bgClassName="inset-0"
           bgImage={digitImage}
         >
-          <strong className="font-medium text-white">Databases under management.</strong>{' '}
+          <strong className="font-medium text-white">Projects delivered successfully.</strong>{' '}
           <span className="font-light">Postgres for the World.</span>
         </Card>
         <Card

@@ -16,7 +16,7 @@ const Hero = () => (
           tag="h1"
           theme="black"
         >
-          A better way to build with Postgres
+          Innovative IT solutions for your business
         </Heading>
         <div className="mt-7 flex items-center gap-6 lg:mt-6 md:mt-5 md:gap-x-[18px]">
           <Button
@@ -24,23 +24,24 @@ const Hero = () => (
             theme="primary"
             to={LINKS.signup}
           >
-            Create an Account
+            Start Your Project
           </Button>
           <Link
             className="text-[15px] font-medium tracking-tight md:text-sm"
             to={LINKS.careers}
             theme="white"
           >
-            View Open Positions
+            View Our Services
           </Link>
         </div>
       </header>
       <p className="max-w-sm pt-3 text-lg leading-snug tracking-extra-tight text-gray-new-50 xl:max-w-[352px] xl:pt-1.5 lg:max-w-[288px] lg:pt-1 lg:text-base md:mt-7 md:max-w-none md:pt-0">
-        Neon is an open-source database company. <span className="text-white">Our mission</span> is
-        to take everything that developers love about Postgres — reliability, performance,
-        extensibility — and deliver it as a serverless product that helps teams {` `}
-        <span className="text-white">confidently ship reliable and scalable applications</span>{' '}
-        faster than ever before.
+        Dewibe is a professional IT services company.{' '}
+        <span className="text-white">Our mission</span> is to deliver cutting-edge technology
+        solutions — web development, mobile apps, cloud services, and digital transformation — that
+        help businesses{` `}
+        <span className="text-white">grow, innovate, and succeed</span> in today's competitive
+        digital landscape.
       </p>
     </Container>
   </section>

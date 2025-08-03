@@ -7,13 +7,13 @@ import RiveAnimation from 'components/shared/rive-animation';
 import LINKS from 'constants/links';
 
 const Cta = ({
-  title = 'Features of tomorrow.<br /> Available today.',
+  title = 'Ready to transform<br /> your business?',
   titleClassName,
   className = 'pb-[320px] pt-[390px] xl:pt-[250px] xl:pb-[220px] lg:pb-[156px] lg:pt-[200px] sm:pb-[100px] sm:pt-[140px]',
   description = null,
   descriptionClassName,
-  buttonText = 'Get Started',
-  buttonUrl = LINKS.signup,
+  buttonText = 'Start Your Project',
+  buttonUrl = '#',
   buttonClassName = 'mt-[38px] h-11 px-7 min-w-[144px] text-[15px] xl:mt-8 lg:mt-7 sm:mt-5 sm:h-10',
 }) => {
   const isExternal = buttonUrl.startsWith('http');

@@ -13,10 +13,11 @@ const Hero = () => (
     >
       <div className="col-start-2 col-end-6 flex flex-col pt-48 2xl:col-start-1 xl:pt-20 lg:pt-0 md:col-span-full">
         <h1 className="font-title text-[58px] font-medium leading-none xl:text-5xl xl:leading-none md:text-4xl">
-          Thanks for subscribing!
+          Thank you for your interest!
         </h1>
         <p className="t-xl mt-7 max-w-md lg:mt-8">
-          You&apos;ll receive our latest announcements and product updates in your inbox.
+          You&apos;ll receive our latest updates about services and technology solutions in your
+          inbox.
         </p>
 
         <Button className="mt-11 self-start lg:mt-8 sm:w-full" size="md" theme="primary" to="/">

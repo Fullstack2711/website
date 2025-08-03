@@ -113,9 +113,9 @@ const Industry = () => {
               'sm:mt-0 sm:text-center sm:text-[32px] sm:leading-[0.9em] sm:tracking-extra-tight'
             )}
           >
-            Industry&nbsp;leaders
+            Business&nbsp;leaders
             <br />
-            trust Neon
+            trust Dewibe
           </h2>
           <Link
             className="mt-5 flex w-fit items-center text-[15px] font-medium leading-none tracking-[-0.03em] [&_svg]:ml-[7px] [&_svg]:scale-110"
@@ -123,7 +123,7 @@ const Industry = () => {
             theme="white"
             withArrow
           >
-            Dive into success stories
+            Explore our success stories
           </Link>
 
           <Testimonials

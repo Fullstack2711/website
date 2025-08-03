@@ -7,13 +7,13 @@ const Hero = () => (
         Brand Guidelines
       </h1>
       <p className="mt-3 max-w-[512px] font-light leading-snug tracking-extra-tight text-gray-new-80 lg:mt-2.5 md:mt-2">
-        Official assets and guidelines to help you reference the Neon brand, including our logo,
+        Official assets and guidelines to help you reference the Dewibe brand, including our logo,
         content and trademarks.
       </p>
       <a
         className="mt-8 inline-flex items-center justify-center whitespace-nowrap rounded-full bg-primary-1 px-5 py-3 text-center text-base font-semibold leading-none tracking-tighter text-black outline-none transition-colors duration-200 hover:bg-[#00e5bf] lg:mt-6 md:mt-5"
-        href="/brand/neon-brand-assets.zip"
-        download="neon-brand-assets.zip"
+        href="/brand/dewibe-brand-assets.zip"
+        download="dewibe-brand-assets.zip"
       >
         Download brand assets
       </a>

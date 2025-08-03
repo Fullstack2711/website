@@ -56,7 +56,7 @@ const Lightning = () => {
             'sm:min-w-[320px] sm:max-w-xs sm:bg-home-lightning-title-sm sm:text-[52px] sm:[mask-image:radial-gradient(49px_55px_at_93.6%_73%,transparent_97%,black)]'
           )}
         >
-          Lightning fast. Edge&nbsp;ready.
+          Innovative. Professional. Ready.
         </h2>
 
         <div
